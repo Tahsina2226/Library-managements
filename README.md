@@ -1,30 +1,16 @@
-# 📚 Library Management System [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen) ![TypeScript](https://img.shields.io/badge/typescript-%5E4.9.0-blue)
+# 📚 Library Management System  ![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen) ![TypeScript](https://img.shields.io/badge/typescript-%5E4.9.0-blue)
 
 A scalable RESTful API for handling library books, member management, and loan processing.
 Implemented using Node.js, TypeScript, Express, and MongoDB.
 Comes with comprehensive API documentation via Swagger for easy integration and testing.
 
----
 
-## 📖 Table of Contents  
-
-- [📌 Introduction](#-introduction)  
-- [✨ Features](#-features)  
-- [🛠️ Installation](#-installation)  
-- [🚀 Usage](#-usage)  
-- [⚙️ Configuration](#-configuration)  
-- [🗂️ Project Structure](#-project-structure)  
-- [📜 Scripts](#-scripts)  
-- [📦 Dependencies](#-dependencies)  
-- [📡 API Endpoints](#-api-endpoints)  
-- [🧩 Troubleshooting](#-troubleshooting)  
-- [👥 Contributors](#-contributors)  
-- [📝 License](#-license)  
-
----
 ## 📌 Introduction
 
-This project provides a backend server built with Express and TypeScript to manage a library system, supporting functionalities such as book management, member registration, and lending operations (coming soon). MongoDB is used for persistent data storage.
+This project provides a backend RESTful API server built with Express and TypeScript to manage a library system.  
+It supports functionalities such as book management, member registration, and lending operations (coming soon).  
+Data persistence is handled by MongoDB via Mongoose.
+
 
 
 ---
@@ -63,6 +49,7 @@ Create `.env` in the root directory:
 DB_USER=*****
 DB_PASS=*****
 PORT=5000
+MONGO_URI=your_mongodb_connection_string
 
 ```
 
@@ -75,26 +62,34 @@ npm start
 🔹 **Access the server:** `http://localhost:5000`  
 
 ---
-🚀 Usage
-Development Mode
-bash
+---
+
+## 🚀 Usage
+
+### Development Mode
+```bash
 npm run dev
-Access: http://localhost:5000
+```
+Access the server at: http://localhost:5000
 
 Production Mode
-bash
+```bash
+Copy
+Edit
 npm start
+```
 Testing
-bash
+```bash
+Copy
+Edit
 npm test
 
-
-
+```
 ---
 
 ## 📡 API Documentation  
 Explore endpoints interactively with :  
-🌐 [http://localhost:5000/api-docs](http://localhost:5000/api/)  
+🌐 [http://localhost:5000/](http://localhost:5000/api/)  
 
 ---
 ## 🌐 Live Demo
@@ -240,6 +235,12 @@ Check out the live Library Management System application here:
 ### Validation Errors
 - Make sure your request payload matches the required schema.
 - Check that all mandatory fields are included in your requests.
+
+### TypeScript Compile Errors
+- Clean and rebuild the project by running `npm run build`.
+- Verify that your type annotations and interfaces are correctly defined.
+- Check for any missing or incompatible types in your code.
+
 
 
 
