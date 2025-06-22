@@ -74,14 +74,12 @@ Access the server at: http://localhost:5000
 
 Production Mode
 ```bash
-Copy
-Edit
+
 npm start
 ```
 Testing
 ```bash
-Copy
-Edit
+
 npm test
 
 ```
